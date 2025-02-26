@@ -1,0 +1,22 @@
+[project]
+name = "one"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MAQadir", email = "aqadir100@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+]
+
+[project.scripts]
+one = "one:main"
+kickoff = "one.main:kickoff"
+plot = "one.main:plot"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
